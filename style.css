@@ -1,0 +1,99 @@
+.nav-style {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(25, 150, 67, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.blob_image_svg {
+    max-width: 100%;
+    max-height: 320px;
+    overflow-y: hidden;
+}
+
+.about-texts {
+    font-size: larger;
+    line-height: 2rem;
+}
+
+.about-texts span {
+    color: rgb(35, 248, 152);
+}
+
+.button-card {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 17px;
+    background: #333;
+    border: none;
+    color: #fff;
+}
+
+.button-card:hover {
+    letter-spacing: 0.15em;
+    background: #ff1867;
+    color: #ff1867;
+    box-shadow: 0 0 45px #ff1867;
+}
+
+.button-card::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #222222;
+}
+
+.button-card span {
+    position: relative;
+    z-index: 1;
+}
+
+.button-card i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.button-card i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff1867;
+    width: 7px;
+    height: 4px;
+    top: -3.5px;
+    left: 80%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.button-card:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.button-card i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff1867;
+    width: 7px;
+    height: 4px;
+    bottom: -3.5px;
+    left: 20%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.button-card:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+#post{
+    color: rgb(35, 248, 152);
+}
